@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+  <card id="search" title="Weather Search">
+    <p> Search for a weather location.<br /> Enter city: <br />
+      <input name="q" /><br />
+      <anchor>
+        <go method="get" href="/weather/search">
+          <postfield name="q" value="$(q)" />
+        </go> Search </anchor>
+    </p>
+    <p>Weather data provided by Open-Meteo.com</p>
+  </card>
+</wml>
